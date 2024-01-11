@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RMCS</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@1,700&display=swap"
+    rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="https://iili.io/JRLossf.png" />
+</head>
+<link href="RMCS.css" rel="stylesheet">
+
+<body>
+  <header>
+    <h1>
+      <center>Raja Mantri Chor Shipahi</center>
+    </h1>
+  </header>
+
+  <div class="container">
+    <div class="box" id="start" onclick="startGame()">Start Game</div>
+    <div class="box" id="new" onclick="newGame()">New Game</div>
+  </div>
+  <div class="moves">
+    <div class="move" id="raja">
+      <div class="label">Raja</div>
+      <div class="pt">1000</div>
+    </div>
+    <div class="move" id="mantri">
+      <div class="label">Mantri</div>
+      <div class="pt">800</div>
+    </div>
+    <div class="move" id="chor">
+      <div class="label">Chor</div>
+      <div class="pt">000</div>
+    </div>
+    <div class="move" id="shipahi">
+      <div class="label">Shipahi</div>
+      <div class="pt">500</div>
+    </div>
+  </div>
+
+
+  <center>
+    <div class="resultBox" id="showResult">
+    </div>
+    <div class="resultBox" id="userIsShipahi">
+      <label>Guess Who Is Chor ?</label>
+      <div class="isThief">
+        <div class="smallBox" onclick="thiefIsP2()" id="chorP2">Player 2</div>
+        <div class="smallBox" onclick="thiefIsP3()" id="chorP3">Player 3</div>
+        <div class="smallBox" onclick="thiefIsP4()" id="chorP4">Player 4</div>
+      </div>
+      <center>
+        <div class="resultBox" id="guessResult">
+        </div>
+      </center>
+    </div>
+    <br>
+    <div class="box" id="ptBtn" onclick="showPtsBtn()">Show Points</div>
+    <div class="box" id="pointBox">
+      <h1>
+        <center>Points</center>
+      </h1>
+      <hr />
+      <span>Player 1 =</span>
+      <span id="p1"></span>
+      <br />
+      <span>Player 2 =</span>
+      <span id="p2"></span>
+      <br />
+      <span>Player 3 =</span>
+      <span id="p3"></span>
+      <br />
+      <span>Player 4 =</span>
+      <span id="p4"></span>
+      <br>
+
+      <span id="blank">......................................</span>
+      <span align="right" id="back" onclick="isToBack()">back</span>
+    </div>
+  </center>
+
+
+
+  <br />
+
+</body>
+<script src="RMCS.js"></script>
+
+</html>
